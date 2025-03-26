@@ -6,6 +6,9 @@ import OTPVerification from "./Login/Otpverification";
 import NotAvailableStore from "./Login/NotavailableStore";
 import SelectList from "./Login/SelectList";
 import Dashboard from "./pages/dashBoard";
+import OrdersPage from "./pages/Orders";
+import ProductsPage from "./pages/myProducts";
+import ProfilePage from "./pages/myProfile";
 
 const RouterPage = () => {
   return (
@@ -16,9 +19,9 @@ const RouterPage = () => {
       <Route path="/not_available_store" element={<NotAvailableStore />} />
       <Route path="/select_store" element={<SelectList />} />
       <Route path="/dashboard" element={<Dashboard />} />
-      {/*<Route path="/orders" element={<OrdersPage />} />
+      <Route path="/orders" element={<OrdersPage />} />
       <Route path="/products" element={<ProductsPage />} />
-      <Route path="/profile" element={<ProfilePage />} /> */}
+      <Route path="/profile" element={<ProfilePage />} />
     </Routes>
   );
 };

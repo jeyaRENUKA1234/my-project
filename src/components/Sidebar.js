@@ -10,6 +10,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import StorefrontIcon from "@mui/icons-material/Storefront";
 import PersonIcon from "@mui/icons-material/Person";
 import { useNavigate } from "react-router-dom";
+import Rectangle from "../assets/Rectangle.png";
 
 const Sidebar = () => {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ const Sidebar = () => {
       {/* Store Logo Section */}
       <div style={{ textAlign: "center", padding: "20px" }}>
         <img
-          src="/path-to-image.png"
+          src={Rectangle}
           alt="Store Logo"
           style={{
             width: "90%",
@@ -45,19 +46,19 @@ const Sidebar = () => {
           </ListItemIcon>
           <ListItemText primary="Dashboard" />
         </ListItemButton>
-        <ListItemButton onClick={() => navigate("/orders")}>
+        <ListItemButton onClick={() => navigate("/dashboard")}>
           <ListItemIcon>
             <ShoppingCartIcon />
           </ListItemIcon>
           <ListItemText primary="Orders" />
         </ListItemButton>
-        <ListItemButton onClick={() => navigate("/products")}>
+        <ListItemButton onClick={() => navigate("/dashboard")}>
           <ListItemIcon>
             <StorefrontIcon />
           </ListItemIcon>
           <ListItemText primary="My Products" />
         </ListItemButton>
-        <ListItemButton onClick={() => navigate("/profile")}>
+        <ListItemButton onClick={() => navigate("/dashboard")}>
           <ListItemIcon>
             <PersonIcon />
           </ListItemIcon>
